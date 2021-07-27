@@ -13,7 +13,7 @@ namespace MyfirstwebAPI.DAL
     {
         public DbSet<AgentsDetails> Agent { get; set; }
 
-        public ApplicationDBContext(): base()
+        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
         {
 
         }
